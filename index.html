@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeloSprint | Ecossistema de líderes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <strong class="brand">BeloSprint</strong>
+        <a href="#livros">Livros</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#aulas">Aulas</a>
+        <a href="#comunidades">Comunidades</a>
+      </nav>
+      <div class="hero-content">
+        <p class="tag">Inovação, liderança e propósito</p>
+        <h1>Um polo para formar mentes que transformam o mercado</h1>
+        <p>
+          A BeloSprint é um ambiente de testes inspirado em hubs como Mônaco e Vale do
+          Silício: networking qualificado, conteúdo de alto impacto e comunidades para
+          crescimento coletivo.
+        </p>
+        <a class="cta" href="#aulas">Quero participar das aulas</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="livros" class="section">
+        <h2>Recomendação de livros</h2>
+        <div class="cards" id="book-list"></div>
+      </section>
+
+      <section id="noticias" class="section contrast">
+        <h2>Notícias e tendências</h2>
+        <div class="cards" id="news-list"></div>
+      </section>
+
+      <section id="aulas" class="section">
+        <h2>Inscrição em aulas poderosas com líderes</h2>
+        <form id="signup-form" class="signup-form">
+          <label>
+            Nome completo
+            <input type="text" name="nome" required />
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Área de interesse
+            <select name="interesse" required>
+              <option value="">Selecione</option>
+              <option>Estratégia de negócios</option>
+              <option>Liderança de produto</option>
+              <option>Crescimento de carreira</option>
+              <option>Inovação e tecnologia</option>
+            </select>
+          </label>
+
+          <button type="submit">Fazer inscrição</button>
+          <p id="form-feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="comunidades" class="section contrast">
+        <h2>Comunidades BeloSprint</h2>
+        <p class="section-intro">
+          Nossos espaços existem para proteger o bem-estar de boas mentes. Não é elitismo,
+          e sim uma organização de ambientes por maturidade e verificação para manter
+          segurança, foco e colaboração.
+        </p>
+
+        <div class="community-grid">
+          <article class="community-card">
+            <h3>Chat comum</h3>
+            <p>Pessoas com capacidades não verificadas, em fase de descoberta e conexão.</p>
+            <button data-link="https://example.com/chat-comum">Entrar</button>
+          </article>
+
+          <article class="community-card">
+            <h3>Builders verificados</h3>
+            <p>Profissionais com histórico validado em projetos, startups e liderança prática.</p>
+            <button data-link="https://example.com/builders">Entrar</button>
+          </article>
+
+          <article class="community-card">
+            <h3>Mentoria executiva</h3>
+            <p>Grupo voltado para decisões estratégicas, governança e impacto regional.</p>
+            <button data-link="https://example.com/mentoria">Entrar</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> BeloSprint — conhecimento, ação e liderança.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
